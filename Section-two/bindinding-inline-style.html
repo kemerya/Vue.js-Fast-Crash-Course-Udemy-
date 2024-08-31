@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1 :style="{color: 'blueviolet', fontSize:fontsize}">{{message}}</h1>
+        <h1 :style="[Styleobject,Styleobject2]">{{message}}</h1>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        let vm= new Vue({
+            el:'#app',
+            data:{
+                message:'Hello',
+                fontsize:'100px',
+                Styleobject: {
+                    color:'red',
+                    fontSize:'100px'
+                },
+                Styleobject2: {
+                    color:'red',
+                    fontSize:'100px'
+                }
+            }
+        })
+    </script>
+</body>
+</html>

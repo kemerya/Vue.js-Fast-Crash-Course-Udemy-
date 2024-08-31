@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My first Vue page</title>
+  <style>
+    #app {
+      display: inline-block;
+      padding: 10px;
+      font-size: x-large;
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Vue Example</h1>
+
+
+
+<div id="app">
+ <h1>say {{ message }} 👋</h1> 
+  <h2>my favorite number is {{number}} 😍</h2>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script>
+  let vm = new Vue({
+    el:'#app',
+   data:
+   {
+     message: 'Hello!',
+     number:712
+    }
+   
+  })
+
+</script>
+
+</body>
+</html>

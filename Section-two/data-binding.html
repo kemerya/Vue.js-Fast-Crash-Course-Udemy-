@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+       <a :href="url">{{url}}</a>
+<h1 :data="dynamicId">{{dynamicId}}</h1>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        let vm = new Vue({
+            el:'#app',
+            data:
+            {
+                url:'https://edwindiaz.com',
+              message:'kemer',
+              dynamicId:30
+            }
+        })
+    </script>  
+</body>
+</html>
